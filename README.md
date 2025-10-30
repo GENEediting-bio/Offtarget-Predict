@@ -98,8 +98,8 @@ python finetune_model_predict.py \
 ```bash
 python finetune_model_predict.py \
     --checkpoint best_epoch20_auc0.9526.pt \
-    --input_csv test_sequences.csv \
-    --output_csv predictions.csv
+    --input_csv example_input.csv \
+    --output_csv prediction_output.csv
 ```
 
 ### Advanced Options
@@ -107,13 +107,14 @@ python finetune_model_predict.py \
 ```bash
 python finetune_model_predict.py \
     --checkpoint best_epoch20_auc0.9526.pt \
-    --input_csv test_sequences.csv \
-    --output_csv predictions.csv \
+    --input_csv example_input.csv \
+    --output_csv prediction_output.csv \
     --local_model_dir ./local_models/nucleotide-transformer-500m-1000g \
     --batch_size 32 \
     --max_length 512 \
     --device cuda
 ```
+
 
 ### Command Line Arguments
 
